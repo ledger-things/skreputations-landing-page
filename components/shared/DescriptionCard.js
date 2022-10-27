@@ -2,7 +2,7 @@ import React from 'react';
 
 const DescriptionCard = ({ descTitle, desc1, desc2, descFooter, imageCard, cardTitle, cardDesc, reverse }) => {
   return (
-    <div className={`flex items-center pt-32 bg-slate-100 ${reverse ? 'flex-row-reverse' : 'flex-wrap'}`}>
+    <div className={`flex items-center py-16 bg-slate-100 ${reverse ? 'lg:flex-row-reverse flex-wrap' : 'flex-wrap'}`}>
       <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
         <div className="text-slate-500 bg-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full">
           <i className="fas fa-user-friends text-xl"></i>

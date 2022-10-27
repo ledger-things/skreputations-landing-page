@@ -92,6 +92,12 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('/hero.jpg')",
+        article: "url('/service/service-bg-1.jpg')",
+        smartphone1: "url('/service/service-bg-2.jpg')",
+        smartphone2: "url('/service/service-bg-3.jpg')",
+        doctor: "url('/service/service-bg-4.jpg')",
+        baby: "url('/service/service-bg-5.jpg')",
+        tablet: "url('/service/service-bg-6.jpg')",
       },
       screens: {
         'max-sm': {

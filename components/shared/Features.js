@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Features = ({ subtitle, title, description, cards }) => {
-  console.log('LOG --> cards', cards);
   return (
     <div className="w-full">
       <section className="pb-20 bg-blueGray-100">

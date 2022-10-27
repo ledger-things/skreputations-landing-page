@@ -3,10 +3,14 @@ import Hero from '../components/shared/Hero';
 import Footer from '../components/shared/Footer';
 import Features from '../components/shared/Features';
 import DescriptionCard from '../components/shared/DescriptionCard';
+import FourColumnsDescriptionComponent from '../components/shared/FourColumnsDescriptionComponent';
+import ServiceCard from '../components/shared/ServiceCard';
+import { SERVICES_CARDS } from '../constants/global-data';
+import Form from '../components/shared/Form';
 
 export default function Home() {
   return (
-    <div className="w-full h-full bg-white">
+    <>
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,7 +32,7 @@ export default function Home() {
           referrerPolicy="no-referrer"
         />
       </Head>
-      <body className="text-blueGray-700 antialiased">
+      <div className="text-blueGray-700 antialiased">
         <div className="bg-white docs-components-wrapper">
           <Hero />
 
@@ -73,7 +77,7 @@ export default function Home() {
             desc1="Quando vi è un’esigenza di cancellare dal web articoli relativi a fatti passati che non rappresentano più l’identità e la realtà attuale e che provocano danni gravi e perpetui alla reputazione. "
             desc2="Alla serenità della persona vittima di un’esposizione forzata di eventi che non hanno più pertinenza e che possono essere dimenticati grazie alla normativa Italiana ed Europea del diritto all’oblio."
             descFooter="Richiedi ora una rimozione di link e salva la tua immagine"
-            imageCard="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+            imageCard="https://ambrosioecommodo.it/ac/wp-content/uploads/2021/10/diritto-oblio-1-1024x545.png"
             cardTitle="Quali contenuti puoi rimuovere dal web?"
             cardDesc="puoi richiedere la rimozione di articoli di giornale, news, articoli blog,
             puoi richiedere di anonimizzare o cancellare i tuoi dati personali come nome e cognome.
@@ -124,7 +128,7 @@ export default function Home() {
             desc1="Puoi richiedere la rimozione delle immagini ed i video che ti ritraggono.  "
             desc2="Come ogni caso, è necessario studiare la strategia adeguata e comprendere se è stata firmata una liberatoria riconoscendo un compenso oppure un titolo di gratuità. "
             descFooter="Richiedi ora una rimozione di foto e video"
-            imageCard="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+            imageCard="https://www.ogmag.net/wp-content/uploads/2019/02/1.jpg"
             cardTitle="Una nostra storia"
             cardDesc="Per esempio è capitato di poter aiutare ragazze che in passato hanno partecipato a concorsi di bellezza oppure sui social hanno pubblicato foto o video che sono state ripresi da altri soggetti, anche da YouTube, e poi si sono sposati ed i mariti gelosi volevano che la ragazza in questione cancellasse tutte le sue immagini e suoi video passati.  "
           />
@@ -133,7 +137,7 @@ export default function Home() {
             desc1="La reputazione digitale della persona e dell’azienda diventa sempre più importante poichè condiziona in modo preponderante gli eventi della vita di tutti i soggetti. Alcuni esempi sono gli imprenditori, i politici oppure i personaggi pubblici che esposti mediaticamente, hanno una massiccia quantità di informazioni sul web."
             desc2=" Le banche prima di decidere se attivare un prestito, un fido ed altre tipologie di atti fiduciari, utilizzano un reparto speciale con tecnologie avanzate per esaminare la reputazione online di ogni richiedente e cliente per prendere infine una decisione.  "
             descFooter="Proteggi la tua reputazione come imprenditore, richiedi ora una consulenza"
-            imageCard="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+            imageCard="https://www.focus.it/site_stored/imgs/0001/033/peter-adams-corbis.1020x680.jpg"
             cardTitle="Proteggere la propria indole imprenditoriale"
             cardDesc="Succede spesso di vedere imprenditori non ottenere fidi bancari per via di notizie diffamanti sul web a loro carico ed è per questo che è importante intervenire per proteggere la reputazione online. "
             reverse
@@ -142,24 +146,38 @@ export default function Home() {
           {/* TREND BANNER */}
           <div className="w-full">
             <section className="relative block">
-              <div className="bg-blueGray-900 py-24">
-                <div className="container mx-auto px-4">
-                  <div className="mb-12 flex flex-wrap -mx-4 justify-center">
-                    <div className="px-4 relative w-full lg:w-8/12 text-center">
-                      <h6 className="mb-2 font-bold uppercase text-blueGray-200">Reputazione online negativa?</h6>
-                      <h3 className="text-3xl font-bold mt-3 mb-1 text-white">Niente visto e porto d'armi</h3>
-                      <p className="mt-2 mb-4 text-xl leading-relaxed text-white opacity-75">
-                        Un altro esempio proviene dagli Stati Uniti, dove facciamo spesso consulenza per la brand reputation di aziende, per ricevere
-                        il porto d’armi le forze dell’ordine esaminano i social network del richiedente per intuire se il soggetto è nello stato
-                        psicologico per poter brandire un’arma da fuoco in modo equilibrato e non pericoloso per la società.
-                      </p>
-                      <p className="mt-2 mb-4 text-xl leading-relaxed text-white opacity-75">
-                        Allo stesso modo, le autorità ed i servizi segreti degli Stati Uniti per rilasciare il visto americano, mettono sotto esame i
-                        social network ed ovviamente la reputazione digitale del soggetto che richiede la cittadinanza.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div className=" bg-blueGray-900 py-24">
+                <FourColumnsDescriptionComponent
+                  dark
+                  title="A chi è rivolto il nostro servizio?"
+                  color={{ button: 'bg-red-500 border-red-500 active:bg-red-600 active:border-red-600', icon: 'bg-red-500' }}
+                  columns={[
+                    {
+                      icon: 'fas fa-chart-bar',
+                      title: 'IMPRENDITORI',
+                      description:
+                        'Imprenditori alla guida di aziende, manager e persone esposte al giudizio di stakeholder, banche, investitori, media, clienti, fornitori, borse, enti pubblici ed altri.',
+                    },
+                    {
+                      icon: 'fas fa-user',
+                      title: 'POLITICI',
+                      description:
+                        'Indagato per un reato passato totalmente archiviato oppure rinviato a giudizio e completamente assolto con problemi di ingiusta reputazione negativa o che vuole proseguire la carriera, magari da sindaco o consigliere regionale per diventare europarlamentare avendo avuto dei problemi giudiziari successivamente archiviati oppure rinviati a giudizio e poi assolto.',
+                    },
+                    {
+                      icon: 'fas fa-users',
+                      title: 'PERSONE PRIVATE',
+                      description:
+                        'Persone private che hanno a cuore la propria dignità e reputazione ma anche quella di un caro defunto che non può più difendersi da diffamazioni ed attacchi di malintenzionati. Contattaci se vuole ottenere la cancellazione di foto o video dai social network, da blog e siti web per riappropriarti della tua serenità.',
+                    },
+                    {
+                      icon: 'fas fa-palette',
+                      title: 'PERSONAGGI PUBBLICI',
+                      description:
+                        'Personaggi pubblici che vivono della loro reputazione, di ciò che le persone dicono ogni giorno sul web. Ad esempio, politici, rappresentanti istituzionali, artisti, giornalisti, sportivi ed altri.',
+                    },
+                  ]}
+                />
               </div>
               <div className="w-full pointer-events-none overflow-hidden h-70-px bg-blueGray-900" style={{ transform: 'translateZ(0px)' }}>
                 <svg
@@ -177,6 +195,42 @@ export default function Home() {
               </div>
             </section>
           </div>
+
+          {/* CUSTOMERS */}
+          <FourColumnsDescriptionComponent
+            title="Cosa otterrai con la nostra consulenza?"
+            color={{ button: 'bg-lightBlue-500 border-lightBlue-500 active:bg-lightBlue-600 active:border-lightBlue-600', icon: 'bg-lightBlue-500' }}
+            columns={[
+              {
+                icon: 'fas fa-file',
+                title: 'UN REPORT SULLA REPUTAZIONE ONLINE',
+                description:
+                  "L'E-Reputation manager attiverà i nostri sistemi di monitoraggio per individuare ed analizzare i contenuti lesivi sul web e comprendere da un punto di vista quantitativo e qualitativo quanto ledono alla tua reputazione.",
+              },
+              {
+                icon: 'fas fa-user-shield',
+                title: "UN PIANO D'AZIONE PER LA DIFESA REPUTAZIONALE",
+                description:
+                  "I nostri analisti ed i nostri specialisti del diritto all'oblio produrranno un piano con le varie strategie da poter implementare per ciascun contenuto da rimuovere e le possibilità di riuscita.",
+              },
+              {
+                icon: 'fas fa-money-check',
+                title: 'PIANO DI FATTIBILITÀ',
+                description:
+                  "Il nostro project manager si occuperà di ottimizzare al meglio le risorse economiche, per ottenere l'obiettivo desiderato attraverso il tuo progetto di recupero della reputazione digitale personalizzato.",
+              },
+              {
+                icon: 'fas fa-file-excel',
+                title: 'RIMOZIONE DEI CONTENUTI',
+                description: 'I nostri tecnici eseguiranno il piano per ottenere nel minor tempo possibile la rimozione dei contenuti negativi.',
+              },
+            ]}
+          />
+
+          {/* SERVICE CARDS */}
+          {SERVICES_CARDS.map((s, index) => (
+            <ServiceCard key={index} index={index} {...s} />
+          ))}
 
           <div className="w-full">
             <section className="relative block">
@@ -198,11 +252,10 @@ export default function Home() {
                 <div className="container mx-auto px-4">
                   <div className="mb-12 flex flex-wrap -mx-4 justify-center">
                     <div className="px-4 relative w-full lg:w-8/12 text-center">
-                      <h6 className="mb-2 font-bold uppercase text-blueGray-200">On the coastline</h6>
-                      <h3 className="text-3xl font-bold mt-3 mb-1 text-white">We are missing the summer</h3>
+                      <h6 className="mb-2 font-bold uppercase text-blueGray-200">Prendi la giusta decisione</h6>
+                      <h3 className="text-3xl font-bold mt-3 mb-1 text-white">Riprenditi la fiducia che meriti.</h3>
                       <p className="mt-2 mb-4 text-xl leading-relaxed text-white opacity-75">
-                        We're waiting for the weather to warm up so that we can go to the coastline. We really miss the summertime, our second home
-                        the coastline.
+                        Rimuoviamo tutto quello che può gettare ombre sulla tua reputazione e mettere a rischio il tuo Futuro.
                       </p>
                     </div>
                   </div>
@@ -211,27 +264,27 @@ export default function Home() {
                       <div className="text-blueGray-900 bg-white p-3 w-12 h-12 shadow-lg rounded-full inline-flex items-center justify-center">
                         <i className="fas fa-medal text-xl"></i>
                       </div>
-                      <h6 className="text-white text-xl mt-5 font-semibold">Excelent Services</h6>
-                      <p className="text-blueGray-500 mt-2 mb-4">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                      </p>
+                      <h6 className="text-white text-xl mt-5 font-semibold">Servizio Eccellente</h6>
+                      <p className="text-blueGray-500 mt-2 mb-4">Siamo professionali e sempre a tua disposizione</p>
                     </div>
                     <div className="w-full lg:w-3/12 px-4 text-center">
                       <div className="text-blueGray-900 bg-white p-3 w-12 h-12 shadow-lg rounded-full inline-flex items-center justify-center">
-                        <i className="fas fa-poll text-xl"></i>
+                        <i className="fas fa-clock text-xl"></i>
                       </div>
-                      <h6 className="text-white text-xl mt-5 font-semibold">Grow your market</h6>
+                      <h6 className="text-white text-xl mt-5 font-semibold">Rimozione in tempi brevi</h6>
                       <p className="text-blueGray-500 mt-2 mb-4">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                        Il nostro team di analisti ed avvocati informatici garantiscono tempi brevi nella rimozione dei link lesivi dal web.
+                        (Mediamente alcune settimane ma è relativo di caso in caso).{' '}
                       </p>
                     </div>
                     <div className="w-full lg:w-3/12 px-4 text-center">
                       <div className="text-blueGray-900 bg-white p-3 w-12 h-12 shadow-lg rounded-full inline-flex items-center justify-center">
                         <i className="fas fa-lightbulb text-xl"></i>
                       </div>
-                      <h6 className="text-white text-xl mt-5 font-semibold">Launch time</h6>
+                      <h6 className="text-white text-xl mt-5 font-semibold">Staff dedicato per il tuo caso</h6>
                       <p className="text-blueGray-500 mt-2 mb-4">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                        Avrai un manager della reputazione dedicato, per avere controllo sull'intero processo di rimozione e difesa della Reputazione
+                        online.{' '}
                       </p>
                     </div>
                   </div>
@@ -247,63 +300,21 @@ export default function Home() {
                     <span className="text-teal-500 bg-teal-200 text-xs font-bold inline-block py-1 uppercase last:mr-0 mr-1 leading-tight rounded px-2">
                       Message us
                     </span>
-                    <h3 className="text-3xl font-bold mt-3 mb-1 text-white">Type in the bellow form</h3>
+                    <h3 className="text-3xl font-bold mt-3 mb-1 text-white">Contattaci adesso</h3>
                     <p className="mt-2 mb-4 text-xl leading-relaxed text-white opacity-75">
-                      They say there's no future for the street rascals, nothing for them, leave them to fall. But it isn't always how you would like
-                      it to be, especially when you do nothing for yourself.
+                      Saremo felici di risponderti nel minor tempo possibile ed analizzeremo insieme tutte le possibilità per risolvere nel più breve
+                      tempo il tuo caso.
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-wrap justify-center">
-                  <div className="w-full lg:w-6/12 px-4">
-                    <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200">
-                      <div className="flex-auto p-5 lg:p-10">
-                        <h4 className="text-2xl font-semibold">Want to work with us?</h4>
-                        <p className="leading-relaxed mt-1 mb-4 text-blueGray-500">Complete this form and we will get back to you in 24 hours.</p>
-                        <div className="mt-8">
-                          <div className="relative w-full mb-3">
-                            <label className="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">Full Name</label>
-                            <input
-                              placeholder="Full Name"
-                              type="text"
-                              className="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"
-                            />
-                          </div>
-                          <div className="relative w-full mb-3">
-                            <label className="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">Email</label>
-                            <input
-                              placeholder="Email"
-                              type="email"
-                              className="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"
-                            />
-                          </div>
-                          <div className="relative w-full mb-3">
-                            <label className="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">Message</label>
-                            <textarea
-                              placeholder="Type a message..."
-                              type="textarea"
-                              rows="4"
-                              cols="80"
-                              className="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"
-                            ></textarea>
-                          </div>
-                        </div>
-                        <div className="text-center mt-6">
-                          <button className="text-xs px-4 py-2 shadow hover:shadow-md text-white bg-blueGray-800 border-blueGray-800 active:bg-blueGray-900 active:border-blueGray-900 rounded outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase border border-solid font-bold">
-                            Send Message
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Form />
               </div>
             </section>
           </div>
 
           <Footer />
         </div>
-      </body>
-    </div>
+      </div>
+    </>
   );
 }

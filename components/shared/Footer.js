@@ -24,11 +24,11 @@ const Footer = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap text-center lg:text-left">
               <div className="w-full lg:w-6/12 px-4">
-                <h4 className="text-xl mt-4 font-bold">Let's keep in touch!</h4>
-                <h5 className="mt-1 mb-2 text-blueGray-500">Find us on any of these platforms, we respond 1-2 business days.</h5>
+                <h4 className="text-xl mt-4 font-bold">Teniamoci in contatto!</h4>
+                <h5 className="mt-1 mb-2 text-blueGray-500">Ci trovi sui social</h5>
                 <div className="mt-6 lg:mb-0 mb-6">
                   <a
-                    href="https://twitter.com/CreativeTim/"
+                    href="/"
                     target="_blank"
                     className="bg-white text-twitter-regular shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-flex"
                     type="button"
@@ -36,7 +36,7 @@ const Footer = () => {
                     <i className="fab fa-twitter"></i>
                   </a>
                   <a
-                    href="https://www.facebook.com/CreativeTim/"
+                    href="/"
                     target="_blank"
                     className="bg-white text-facebook-regular shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-flex"
                     type="button"
@@ -44,7 +44,7 @@ const Footer = () => {
                     <i className="fab fa-facebook"></i>
                   </a>
                   <a
-                    href="https://dribbble.com/creativetim"
+                    href="/"
                     target="_blank"
                     className="bg-white text-dribbble-regular shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-flex"
                     type="button"
@@ -52,7 +52,7 @@ const Footer = () => {
                     <i className="fab fa-dribbble"></i>
                   </a>
                   <a
-                    href="https://github.com/creativetimofficial"
+                    href="/"
                     target="_blank"
                     className="bg-white text-github-regular shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-flex"
                     type="button"
