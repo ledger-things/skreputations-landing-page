@@ -38,20 +38,20 @@ export default function Home() {
             description="Se sei atterrato su questa pagina, molto probabilmente stai subendo qualche situazione spiacevole per colpa di contenuti presenti online e per questo motivo di seguito troverai informazioni utili al tuo bisogno specifico ma per qualsiasi informazione puoi raggiungermi anche per telefono."
             cards={[
               {
-                tailwindColor: 'red',
+                tailwindColorClasses: 'from-orange-400 to-orange-600 bg-orange-400',
                 icon: 'fa-award',
                 title: 'Cancellazione Rapida',
                 description: 'Puoi ottienere la cancellazione dei contenuti web che danneggiano la tua reputazione, immagine ed il prestigio online.',
               },
               {
-                tailwindColor: 'sky',
+                tailwindColorClasses: 'from-lightBlue-400 to-lightBlue-600 bg-lightBlue-400',
                 icon: 'fa-retweet',
                 title: 'Eliminazione materiali dannosi',
                 description:
                   'Puoi richiedere il nostro servizio innovativo di rimozione dei contenuti negativi per ottenere la cancellazione di foto, video, siti web, blog, articoli di giornale, di informazioni personali, di account digitali come i social network attraverso il diritto all’oblio ed altre tecniche avanzate di digital marketing',
               },
               {
-                tailwindColor: 'emerald',
+                tailwindColorClasses: 'from-emerald-400 to-emerald-600 bg-emerald-400',
                 icon: 'fa-fingerprint',
                 title: 'Guidato passo passo',
                 description: 'Verrai seguito dal nostro team di specialisti al fine di ottenere il risultato desiderato',

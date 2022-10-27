@@ -1,4 +1,5 @@
 const plugin = require('tailwindcss/plugin');
+const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
@@ -32,59 +33,60 @@ module.exports = {
     }),
   ],
   theme: {
-    extend: {
-      colors: {
-        transparent: 'transparent',
-        current: 'current',
-        facebook: {
-          regular: '#3b5999',
-          active: '#344e87',
-        },
-        twitter: {
-          regular: '#1da1f2',
-          active: '#0d95e8',
-        },
-        instagram: {
-          regular: '#e4405f',
-          active: '#e02549',
-        },
-        github: {
-          regular: '#222',
-          active: '#131313',
-        },
-        pinterest: {
-          regular: '#bd081c',
-          active: '#a00718',
-        },
-        youtube: {
-          regular: '#cd201f',
-          active: '#b21c1b',
-        },
-        vimeo: {
-          regular: '#1ab7ea',
-          active: '#13a3d2',
-        },
-        slack: {
-          regular: '#3aaf85',
-          active: '#329874',
-        },
-        dribbble: {
-          regular: '#ea4c89',
-          active: '#e73177',
-        },
-        reddit: {
-          regular: '#ff4500',
-          active: '#e03d00',
-        },
-        tumblr: {
-          regular: '#35465c',
-          active: '#2a3749',
-        },
-        linkedin: {
-          regular: '#0077b5',
-          active: '#00669c',
-        },
+    colors: {
+      ...colors,
+      transparent: 'transparent',
+      current: 'current',
+      facebook: {
+        regular: '#3b5999',
+        active: '#344e87',
       },
+      twitter: {
+        regular: '#1da1f2',
+        active: '#0d95e8',
+      },
+      instagram: {
+        regular: '#e4405f',
+        active: '#e02549',
+      },
+      github: {
+        regular: '#222',
+        active: '#131313',
+      },
+      pinterest: {
+        regular: '#bd081c',
+        active: '#a00718',
+      },
+      youtube: {
+        regular: '#cd201f',
+        active: '#b21c1b',
+      },
+      vimeo: {
+        regular: '#1ab7ea',
+        active: '#13a3d2',
+      },
+      slack: {
+        regular: '#3aaf85',
+        active: '#329874',
+      },
+      dribbble: {
+        regular: '#ea4c89',
+        active: '#e73177',
+      },
+      reddit: {
+        regular: '#ff4500',
+        active: '#e03d00',
+      },
+      tumblr: {
+        regular: '#35465c',
+        active: '#2a3749',
+      },
+      linkedin: {
+        regular: '#0077b5',
+        active: '#00669c',
+      },
+    },
+    extend: {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
