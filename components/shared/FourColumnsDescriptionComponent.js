@@ -11,11 +11,13 @@ const FourColumnsDescriptionComponent = ({ subtitle, title, description, dark, c
         </div>
       </div>
       <div className="flex flex-wrap -mx-4 items-center justify-center -mt-6">
-        <button
-          className={`${color.button} inline-block outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase border border-solid font-bold last:mr-0 mr-2  text-white text-sm px-6 py-2 shadow hover:shadow-lg rounded-md`}
-        >
-          <i className="mr-1 fas fa-comment"></i> Contact Us
-        </button>
+        <a href="#contact">
+          <button
+            className={`${color.button} inline-block outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase border border-solid font-bold last:mr-0 mr-2  text-white text-sm px-6 py-2 shadow hover:shadow-lg rounded-md`}
+          >
+            <i className="mr-1 fas fa-comment"></i> Contattaci
+          </button>
+        </a>
       </div>
       <div className="flex flex-wrap -mx-4 mt-12">
         {columns.map((col, index) => (

@@ -10,7 +10,7 @@ const DescriptionCard = ({ descTitle, desc1, desc2, descFooter, imageCard, cardT
         <h3 className="text-3xl mb-2 font-semibold leading-normal">{descTitle}</h3>
         <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-slate-700">{desc1} </p>
         <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-slate-700">{desc2}</p>
-        <a className="font-bold text-slate-800 mt-8" href="#/">
+        <a className="font-bold text-slate-800 mt-8" href="#contact">
           {descFooter}
         </a>
       </div>

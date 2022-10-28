@@ -31,6 +31,23 @@ export default function Home() {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        {/* <!--  Essential META Tags --> */}
+        <meta property="og:title" content="SKReputation" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://skreputation.com/hero-meta.png" />
+        <meta property="og:url" content="https://skreputation.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        {/* <!--  Non-Essential, But Recommended --> */}
+        <meta
+          property="og:description"
+          content="Difendi la tua reputazione. Servizio di rimozione articoli online, video, immagini, recensioni, informazioni personali, cancellazione link."
+        />
+        <meta property="og:site_name" content="SKReputation" />
+        <meta name="twitter:image:alt" content="Servizio di difesa reputazione" />
+
+        {/* <!--  Non-Essential, But Required for Analytics --> */}
+        <meta name="twitter:site" content="@skreputation"></meta>
       </Head>
       <div className="text-blueGray-700 antialiased">
         <div className="bg-white docs-components-wrapper">

@@ -1,5 +1,3 @@
-import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Footer = () => {
@@ -35,7 +33,7 @@ const Footer = () => {
                   >
                     <i className="fab fa-twitter"></i>
                   </a>
-                  <a
+                  {/* <a
                     href="/"
                     target="_blank"
                     className="bg-white text-facebook-regular shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-flex"
@@ -58,7 +56,7 @@ const Footer = () => {
                     type="button"
                   >
                     <i className="fab fa-github"></i>
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div className="w-full lg:w-6/12 px-4">

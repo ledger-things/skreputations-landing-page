@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="w-full">
       <div className="relative pt-16pb-3 flex content-center items-center justify-center min-h-screen-75 ">
         <div className="absolute top-0 w-full h-full bg-center bg-cover bg-hero">
-          <span className="w-full h-full absolute opacity-75 bg-black"></span>
+          <span className="w-full h-full absolute opacity-50 bg-black"></span>
         </div>
         <div className="container relative mx-auto">
           <div className="items-center flex flex-wrap">
