@@ -66,66 +66,31 @@ const Footer = () => {
                   <div className="w-full lg:w-4/12 px-4 ml-auto">
                     <span className="block uppercase text-xs font-bold mb-2">Useful Links</span>
                     <ul className="list-unstyled">
-                      <a
-                        href="https://www.creative-tim.com/presentation?npr-landing-1"
-                        target="_blank"
-                        className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm"
-                      >
-                        About Us
+                      <a href="/" className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+                        Il nostro lavoro
                       </a>
-                      <a
-                        href="https://www.creative-tim.com/blog?npr-landing-1"
-                        target="_blank"
-                        className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm"
-                      >
-                        Blog
+                      <a href="#customers" className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+                        I nostri clienti
                       </a>
-                      <a
-                        href="https://github.com/creativetimofficial"
-                        target="_blank"
-                        className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm"
-                      >
-                        Github
+                      <a href="#consulence" className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+                        Consulenza
                       </a>
-                      <a
-                        href="https://www.creative-tim.com/templates/free?npr-landing-1"
-                        target="_blank"
-                        className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm"
-                      >
-                        Free Products
+                      <a href="/#faq" className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+                        Domande e soluzioni
                       </a>
                     </ul>
                   </div>
                   <div className="w-full lg:w-4/12 px-4 ml-auto">
                     <span className="block uppercase text-xs font-bold mb-2">Other Resources</span>
                     <ul className="list-unstyled">
-                      <a
-                        href="https://www.creative-tim.com/license?npr-landing-1"
-                        target="_blank"
-                        className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm"
-                      >
-                        License
-                      </a>
-                      <a
-                        href="https://www.creative-tim.com/terms?npr-landing-1"
-                        target="_blank"
-                        className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm"
-                      >
+                      <a href="#" target="_blank" className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
                         Terms &amp; Conditions
                       </a>
-                      <a
-                        href="https://www.creative-tim.com/privacy?npr-landing-1"
-                        target="_blank"
-                        className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm"
-                      >
+                      <a href="#" target="_blank" className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
                         Privacy Policy
                       </a>
-                      <a
-                        href="https://www.creative-tim.com/contact-us?npr-landing-1"
-                        target="_blank"
-                        className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm"
-                      >
-                        Contact Us
+                      <a href="mailto:info@skreputation.com" target="_blank" className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+                        Contattaci
                       </a>
                     </ul>
                   </div>
@@ -135,7 +100,7 @@ const Footer = () => {
             <hr className="my-6 border-blueGray-200" />
             <div className="flex flex-wrap items-center md:justify-between justify-center">
               <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-                <div className="text-sm text-blueGray-500 py-1">Copyright © 2021 Notus Design System PRO by Creative Tim.</div>
+                <div className="text-sm text-blueGray-500 py-1">Copyright © 2022 SKReputation</div>
               </div>
             </div>
           </div>

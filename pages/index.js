@@ -146,7 +146,7 @@ export default function Home() {
           {/* TREND BANNER */}
           <div className="w-full">
             <section className="relative block">
-              <div className=" bg-blueGray-900 py-24">
+              <div id="customers" className=" bg-blueGray-900 py-24">
                 <FourColumnsDescriptionComponent
                   dark
                   title="A chi è rivolto il nostro servizio?"
@@ -197,40 +197,47 @@ export default function Home() {
           </div>
 
           {/* CUSTOMERS */}
-          <FourColumnsDescriptionComponent
-            title="Cosa otterrai con la nostra consulenza?"
-            color={{ button: 'bg-lightBlue-500 border-lightBlue-500 active:bg-lightBlue-600 active:border-lightBlue-600', icon: 'bg-lightBlue-500' }}
-            columns={[
-              {
-                icon: 'fas fa-file',
-                title: 'UN REPORT SULLA REPUTAZIONE ONLINE',
-                description:
-                  "L'E-Reputation manager attiverà i nostri sistemi di monitoraggio per individuare ed analizzare i contenuti lesivi sul web e comprendere da un punto di vista quantitativo e qualitativo quanto ledono alla tua reputazione.",
-              },
-              {
-                icon: 'fas fa-user-shield',
-                title: "UN PIANO D'AZIONE PER LA DIFESA REPUTAZIONALE",
-                description:
-                  "I nostri analisti ed i nostri specialisti del diritto all'oblio produrranno un piano con le varie strategie da poter implementare per ciascun contenuto da rimuovere e le possibilità di riuscita.",
-              },
-              {
-                icon: 'fas fa-money-check',
-                title: 'PIANO DI FATTIBILITÀ',
-                description:
-                  "Il nostro project manager si occuperà di ottimizzare al meglio le risorse economiche, per ottenere l'obiettivo desiderato attraverso il tuo progetto di recupero della reputazione digitale personalizzato.",
-              },
-              {
-                icon: 'fas fa-file-excel',
-                title: 'RIMOZIONE DEI CONTENUTI',
-                description: 'I nostri tecnici eseguiranno il piano per ottenere nel minor tempo possibile la rimozione dei contenuti negativi.',
-              },
-            ]}
-          />
+          <div id="consulence">
+            <FourColumnsDescriptionComponent
+              title="Cosa otterrai con la nostra consulenza?"
+              color={{
+                button: 'bg-lightBlue-500 border-lightBlue-500 active:bg-lightBlue-600 active:border-lightBlue-600',
+                icon: 'bg-lightBlue-500',
+              }}
+              columns={[
+                {
+                  icon: 'fas fa-file',
+                  title: 'UN REPORT SULLA REPUTAZIONE ONLINE',
+                  description:
+                    "L'E-Reputation manager attiverà i nostri sistemi di monitoraggio per individuare ed analizzare i contenuti lesivi sul web e comprendere da un punto di vista quantitativo e qualitativo quanto ledono alla tua reputazione.",
+                },
+                {
+                  icon: 'fas fa-user-shield',
+                  title: "UN PIANO D'AZIONE PER LA DIFESA REPUTAZIONALE",
+                  description:
+                    "I nostri analisti ed i nostri specialisti del diritto all'oblio produrranno un piano con le varie strategie da poter implementare per ciascun contenuto da rimuovere e le possibilità di riuscita.",
+                },
+                {
+                  icon: 'fas fa-money-check',
+                  title: 'PIANO DI FATTIBILITÀ',
+                  description:
+                    "Il nostro project manager si occuperà di ottimizzare al meglio le risorse economiche, per ottenere l'obiettivo desiderato attraverso il tuo progetto di recupero della reputazione digitale personalizzato.",
+                },
+                {
+                  icon: 'fas fa-file-excel',
+                  title: 'RIMOZIONE DEI CONTENUTI',
+                  description: 'I nostri tecnici eseguiranno il piano per ottenere nel minor tempo possibile la rimozione dei contenuti negativi.',
+                },
+              ]}
+            />
+          </div>
 
           {/* SERVICE CARDS */}
-          {SERVICES_CARDS.map((s, index) => (
-            <ServiceCard key={index} index={index} {...s} />
-          ))}
+          <div id="faq">
+            {SERVICES_CARDS.map((s, index) => (
+              <ServiceCard key={index} index={index} {...s} />
+            ))}
+          </div>
 
           <div className="w-full">
             <section className="relative block">
