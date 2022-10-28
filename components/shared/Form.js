@@ -78,33 +78,29 @@ const Form = () => {
                     className="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"
                   ></textarea>
                 </div>
-                <div className="relative w-full mb-3">
-                  <label className="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">Scrivi i link da rimuovere</label>
-                  {links.map((l, index) => (
-                    <div key={index} className="relative flex w-full flex-wrap items-stretch mb-3">
-                      <label htmlFor={`link-${index + 1}`} className="block uppercase text-blueGray-400 text-xs font-bold mb-2 ml-1">
-                        Link {index + 1}
-                      </label>
-                      <input
-                        placeholder="link"
-                        type="url"
-                        name={`link-${index + 1}`}
-                        id={`link-${index + 1}`}
-                        className="border-blueGray-300 px-2 py-2 text-sm w-full placeholder-blueGray-200 text-blueGray-700 relative bg-white rounded-md outline-none focus:ring focus:ring-lightBlue-500  focus:border-lightBlue-500 border border-solid transition duration-200 pr-10 "
-                      />
-                      <span
-                        className="cursor-pointer z-10 h-full flex absolute text-center text-red-900 text-sm items-center w-8 right-0 top-3"
-                        onClick={() => {
-                          let arr = links.slice(0, index);
-                          setLinks(arr);
-                        }}
-                      >
-                        <i className="fas fa-minus"></i>
-                      </span>
-                    </div>
-                  ))}
-                </div>
-                <span id="result"></span>
+                {links.map((l, index) => (
+                  <div key={index} className="relative flex w-full flex-wrap items-stretch mb-3">
+                    <label htmlFor={`link-${index + 1}`} className="block uppercase text-blueGray-400 text-xs font-bold mb-2 ml-1">
+                      Link {index + 1}
+                    </label>
+                    <input
+                      placeholder="link"
+                      type="url"
+                      name={`link-${index + 1}`}
+                      id={`link-${index + 1}`}
+                      className="border-blueGray-300 px-2 py-2 text-sm w-full placeholder-blueGray-200 text-blueGray-700 relative bg-white rounded-md outline-none focus:ring focus:ring-lightBlue-500  focus:border-lightBlue-500 border border-solid transition duration-200 pr-10 "
+                    />
+                    <span
+                      className="cursor-pointer z-10 h-full flex absolute text-center text-red-900 text-sm items-center w-8 right-0 top-3"
+                      onClick={() => {
+                        let arr = links.slice(0, index);
+                        setLinks(arr);
+                      }}
+                    >
+                      <i className="fas fa-minus"></i>
+                    </span>
+                  </div>
+                ))}
                 <div className="w-full">
                   <span
                     onClick={() => {
