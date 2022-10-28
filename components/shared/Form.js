@@ -71,6 +71,7 @@ const Form = () => {
                   <textarea
                     placeholder="Scrivi un messaggio..."
                     name="message"
+                    id="message"
                     type="textarea"
                     rows="4"
                     cols="80"
@@ -81,14 +82,14 @@ const Form = () => {
                   <label className="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">Scrivi i link da rimuovere</label>
                   {links.map((l, index) => (
                     <div key={index} className="relative flex w-full flex-wrap items-stretch mb-3">
-                      <label htmlFor={`url - ${index}`} className="block uppercase text-blueGray-400 text-xs font-bold mb-2 ml-1">
+                      <label htmlFor={`link-${index + 1}`} className="block uppercase text-blueGray-400 text-xs font-bold mb-2 ml-1">
                         Link {index + 1}
                       </label>
                       <input
                         placeholder="link"
                         type="url"
-                        name={`url - ${index}`}
-                        id={`url - ${index}`}
+                        name={`link-${index + 1}`}
+                        id={`link-${index + 1}`}
                         className="border-blueGray-300 px-2 py-2 text-sm w-full placeholder-blueGray-200 text-blueGray-700 relative bg-white rounded-md outline-none focus:ring focus:ring-lightBlue-500  focus:border-lightBlue-500 border border-solid transition duration-200 pr-10 "
                       />
                       <span
@@ -103,6 +104,7 @@ const Form = () => {
                     </div>
                   ))}
                 </div>
+                <span id="result"></span>
                 <div className="w-full">
                   <span
                     onClick={() => {
