@@ -1,21 +1,20 @@
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
-const Form = () => {
-  const [links, setLinks] = useState([{ link: '' }]);
+const Form = ({ width50Percent }) => {
   const [submitterName, setSubmitterName] = useState('');
   const router = useRouter();
   const confirmationScreenVisible = router.asPath?.includes('success=true');
   const formVisible = !confirmationScreenVisible;
 
   return (
-    <div className="flex flex-wrap justify-center" id="contact">
-      <div className="w-full lg:w-6/12 px-4">
+    <div className="flex w-full flex-wrap justify-center" id="contact">
+      <div className={`w-full ${width50Percent && 'lg:w-6/12'} px-4`}>
         <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200">
           <div className="flex-auto p-5 lg:p-10">
             <h4 className="text-2xl font-semibold">Contattaci</h4>
             <p className="leading-relaxed mt-1 mb-4 text-blueGray-500">Compila il form e ti ricontatteremo il prima possibile.</p>
-            <form name="contact-form" method="POST" action="./#contact?success=true" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form name="contact-form" method="POST" action="#contact?success=true" data-netlify="true" data-netlify-honeypot="bot-field">
               <input type="hidden" name="subject" value={`You've got mail from ${submitterName}`} />
               <input type="hidden" name="form-name" value="contact-form" />
               <p hidden>
@@ -38,31 +37,33 @@ const Form = () => {
                     className="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"
                   />
                 </div>
-                <div className="relative w-full mb-3">
-                  <label htmlFor="email" className="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    placeholder="Email"
-                    name="email"
-                    type="email"
-                    required
-                    className="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"
-                  />
-                </div>
-                <div className="relative w-full mb-3">
-                  <label htmlFor="ohone" className="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">
-                    Numero di telefono
-                  </label>
-                  <input
-                    id="phone"
-                    placeholder="Numero di telefono"
-                    name="phone"
-                    type="tel"
-                    required
-                    className="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"
-                  />
+                <div className="flex w-full flex-col lg:flex-row  lg:gap-3">
+                  <div className="relative flex w-full flex-col mb-3">
+                    <label htmlFor="email" className="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      placeholder="Email"
+                      name="email"
+                      type="email"
+                      required
+                      className="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"
+                    />
+                  </div>
+                  <div className="relative flex  w-full flex-col mb-3">
+                    <label htmlFor="phone" className="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">
+                      Numero di telefono
+                    </label>
+                    <input
+                      id="phone"
+                      placeholder="Numero di telefono"
+                      name="phone"
+                      type="tel"
+                      required
+                      className="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"
+                    />
+                  </div>
                 </div>
                 <div className="relative w-full mb-3">
                   <label htmlFor="message" className="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">

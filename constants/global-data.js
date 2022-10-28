@@ -48,3 +48,56 @@ export const SERVICES_CARDS = [
     tailwindBackImage: '/service/service-bg-6.jpg',
   },
 ];
+
+export const COLUMNS_CONSULANCE = [
+  {
+    icon: 'fas fa-file',
+    title: 'UN REPORT SULLA REPUTAZIONE ONLINE',
+    description:
+      "L'E-Reputation manager attiverà i nostri sistemi di monitoraggio per individuare ed analizzare i contenuti lesivi sul web e comprendere da un punto di vista quantitativo e qualitativo quanto ledono alla tua reputazione.",
+  },
+  {
+    icon: 'fas fa-user-shield',
+    title: "UN PIANO D'AZIONE PER LA DIFESA REPUTAZIONALE",
+    description:
+      "I nostri analisti ed i nostri specialisti del diritto all'oblio produrranno un piano con le varie strategie da poter implementare per ciascun contenuto da rimuovere e le possibilità di riuscita.",
+  },
+  {
+    icon: 'fas fa-money-check',
+    title: 'PIANO DI FATTIBILITÀ',
+    description:
+      "Il nostro project manager si occuperà di ottimizzare al meglio le risorse economiche, per ottenere l'obiettivo desiderato attraverso il tuo progetto di recupero della reputazione digitale personalizzato.",
+  },
+  {
+    icon: 'fas fa-file-excel',
+    title: 'RIMOZIONE DEI CONTENUTI',
+    description: 'I nostri tecnici eseguiranno il piano per ottenere nel minor tempo possibile la rimozione dei contenuti negativi.',
+  },
+];
+
+export const COLUMNS_CUSTOMERS = [
+  {
+    icon: 'fas fa-chart-bar',
+    title: 'IMPRENDITORI',
+    description:
+      'Imprenditori alla guida di aziende, manager e persone esposte al giudizio di stakeholder, banche, investitori, media, clienti, fornitori, borse, enti pubblici ed altri.',
+  },
+  {
+    icon: 'fas fa-user',
+    title: 'POLITICI',
+    description:
+      'Indagato per un reato passato totalmente archiviato oppure rinviato a giudizio e completamente assolto con problemi di ingiusta reputazione negativa o che vuole proseguire la carriera, magari da sindaco o consigliere regionale per diventare europarlamentare avendo avuto dei problemi giudiziari successivamente archiviati oppure rinviati a giudizio e poi assolto.',
+  },
+  {
+    icon: 'fas fa-users',
+    title: 'PERSONE PRIVATE',
+    description:
+      'Persone private che hanno a cuore la propria dignità e reputazione ma anche quella di un caro defunto che non può più difendersi da diffamazioni ed attacchi di malintenzionati. Contattaci se vuole ottenere la cancellazione di foto o video dai social network, da blog e siti web per riappropriarti della tua serenità.',
+  },
+  {
+    icon: 'fas fa-palette',
+    title: 'PERSONAGGI PUBBLICI',
+    description:
+      'Personaggi pubblici che vivono della loro reputazione, di ciò che le persone dicono ogni giorno sul web. Ad esempio, politici, rappresentanti istituzionali, artisti, giornalisti, sportivi ed altri.',
+  },
+];

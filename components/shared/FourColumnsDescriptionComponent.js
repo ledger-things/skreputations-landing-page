@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FourColumnsDescriptionComponent = ({ subtitle, title, description, dark, color, columns }) => {
+const FourColumnsDescriptionComponent = ({ subtitle, title, description, dark, color, columns, buttonText, buttonHref }) => {
   return (
     <div className={` ${dark ? ' bg-blueGray-900' : 'bg-blueGray-100'}  pt-12  container mx-auto px-4`}>
       <div className="mb-12 flex flex-wrap -mx-4 justify-center">
@@ -11,11 +11,11 @@ const FourColumnsDescriptionComponent = ({ subtitle, title, description, dark, c
         </div>
       </div>
       <div className="flex flex-wrap -mx-4 items-center justify-center -mt-6">
-        <a href="#contact">
+        <a href={buttonHref}>
           <button
             className={`${color.button} inline-block outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase border border-solid font-bold last:mr-0 mr-2  text-white text-sm px-6 py-2 shadow hover:shadow-lg rounded-md`}
           >
-            <i className="mr-1 fas fa-comment"></i> Contattaci
+            <i className="mr-1 fas fa-comment"></i> {buttonText}
           </button>
         </a>
       </div>

@@ -26,7 +26,7 @@ const ServiceCard = ({ title, subtitle, cardTitle, cardDescription, tailwindBack
               <div className="absolute rounded-lg w-full h-full bg-black opacity-50"></div>
               <div className="p-10 flex h-full items-end z-1">
                 <div>
-                  <a href="#contact">
+                  <a buttonHref="./contact">
                     <h1 className="text-4xl font-semibold mt-0 mb-2 text-white">{cardTitle}</h1>
                     <p className="text-white opacity-75 text-lg">{cardDescription}</p>
                     <button className="inline-block mt-6 outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase border border-solid font-bold last:mr-0 mr-2  text-white bg-red-500 border-red-500 active:bg-red-600 active:border-red-600 text-sm px-6 py-2 shadow hover:shadow-lg rounded-md">

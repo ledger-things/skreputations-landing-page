@@ -15,7 +15,7 @@ const Hero = () => {
                 <p className="mt-4 text-lg text-blueGray-300">
                   RIMOZIONE ARTICOLI ONLINE, VIDEO, IMMAGINI, RECENSIONI, INFORMAZIONI PERSONALI, CANCELLAZIONE LINK
                 </p>
-                <a href="#contact">
+                <a href="./contact" target="blank">
                   <button className="mt-4 inline-block outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase border border-solid font-bold last:mr-0 mr-2  text-white bg-orange-500 border-orange-500 active:bg-orange-600 active:border-orange-600 text-sm px-6 py-3 shadow-md hover:shadow-lg rounded-lg">
                     <i className="fas fa-play mr-2"></i>CONTATTACI SUBITO{' '}
                   </button>
@@ -46,5 +46,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-//Malicious link removal service for your image

@@ -5,7 +5,7 @@ import Features from '../components/shared/Features';
 import DescriptionCard from '../components/shared/DescriptionCard';
 import FourColumnsDescriptionComponent from '../components/shared/FourColumnsDescriptionComponent';
 import ServiceCard from '../components/shared/ServiceCard';
-import { SERVICES_CARDS } from '../constants/global-data';
+import { COLUMNS_CONSULANCE, COLUMNS_CUSTOMERS, SERVICES_CARDS } from '../constants/global-data';
 import Form from '../components/shared/Form';
 
 export default function Home() {
@@ -160,40 +160,17 @@ export default function Home() {
             reverse
           />
 
-          {/* TREND BANNER */}
+          {/* CUSTOMERS COLUMNS */}
           <div className="w-full">
             <section className="relative block">
               <div id="customers" className=" bg-blueGray-900 py-24">
                 <FourColumnsDescriptionComponent
                   dark
+                  buttonText="Contattaci"
+                  buttonHref="./contact"
                   title="A chi è rivolto il nostro servizio?"
                   color={{ button: 'bg-red-500 border-red-500 active:bg-red-600 active:border-red-600', icon: 'bg-red-500' }}
-                  columns={[
-                    {
-                      icon: 'fas fa-chart-bar',
-                      title: 'IMPRENDITORI',
-                      description:
-                        'Imprenditori alla guida di aziende, manager e persone esposte al giudizio di stakeholder, banche, investitori, media, clienti, fornitori, borse, enti pubblici ed altri.',
-                    },
-                    {
-                      icon: 'fas fa-user',
-                      title: 'POLITICI',
-                      description:
-                        'Indagato per un reato passato totalmente archiviato oppure rinviato a giudizio e completamente assolto con problemi di ingiusta reputazione negativa o che vuole proseguire la carriera, magari da sindaco o consigliere regionale per diventare europarlamentare avendo avuto dei problemi giudiziari successivamente archiviati oppure rinviati a giudizio e poi assolto.',
-                    },
-                    {
-                      icon: 'fas fa-users',
-                      title: 'PERSONE PRIVATE',
-                      description:
-                        'Persone private che hanno a cuore la propria dignità e reputazione ma anche quella di un caro defunto che non può più difendersi da diffamazioni ed attacchi di malintenzionati. Contattaci se vuole ottenere la cancellazione di foto o video dai social network, da blog e siti web per riappropriarti della tua serenità.',
-                    },
-                    {
-                      icon: 'fas fa-palette',
-                      title: 'PERSONAGGI PUBBLICI',
-                      description:
-                        'Personaggi pubblici che vivono della loro reputazione, di ciò che le persone dicono ogni giorno sul web. Ad esempio, politici, rappresentanti istituzionali, artisti, giornalisti, sportivi ed altri.',
-                    },
-                  ]}
+                  columns={COLUMNS_CUSTOMERS}
                 />
               </div>
               <div className="w-full pointer-events-none overflow-hidden h-70-px bg-blueGray-900" style={{ transform: 'translateZ(0px)' }}>
@@ -213,39 +190,17 @@ export default function Home() {
             </section>
           </div>
 
-          {/* CUSTOMERS */}
+          {/* CONSULANCE */}
           <div id="consulence">
             <FourColumnsDescriptionComponent
               title="Cosa otterrai con la nostra consulenza?"
+              buttonText="Contattaci"
+              buttonHref="./contact"
               color={{
                 button: 'bg-lightBlue-500 border-lightBlue-500 active:bg-lightBlue-600 active:border-lightBlue-600',
                 icon: 'bg-lightBlue-500',
               }}
-              columns={[
-                {
-                  icon: 'fas fa-file',
-                  title: 'UN REPORT SULLA REPUTAZIONE ONLINE',
-                  description:
-                    "L'E-Reputation manager attiverà i nostri sistemi di monitoraggio per individuare ed analizzare i contenuti lesivi sul web e comprendere da un punto di vista quantitativo e qualitativo quanto ledono alla tua reputazione.",
-                },
-                {
-                  icon: 'fas fa-user-shield',
-                  title: "UN PIANO D'AZIONE PER LA DIFESA REPUTAZIONALE",
-                  description:
-                    "I nostri analisti ed i nostri specialisti del diritto all'oblio produrranno un piano con le varie strategie da poter implementare per ciascun contenuto da rimuovere e le possibilità di riuscita.",
-                },
-                {
-                  icon: 'fas fa-money-check',
-                  title: 'PIANO DI FATTIBILITÀ',
-                  description:
-                    "Il nostro project manager si occuperà di ottimizzare al meglio le risorse economiche, per ottenere l'obiettivo desiderato attraverso il tuo progetto di recupero della reputazione digitale personalizzato.",
-                },
-                {
-                  icon: 'fas fa-file-excel',
-                  title: 'RIMOZIONE DEI CONTENUTI',
-                  description: 'I nostri tecnici eseguiranno il piano per ottenere nel minor tempo possibile la rimozione dei contenuti negativi.',
-                },
-              ]}
+              columns={COLUMNS_CONSULANCE}
             />
           </div>
 
@@ -331,7 +286,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <Form />
+                <Form width50Percent />
               </div>
             </section>
           </div>
