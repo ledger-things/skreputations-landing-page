@@ -16,7 +16,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>SKreputation</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Notus Design System PRO by Creative Tim | Premium UI Kit and Admin for Tailwind CSS" />
+        <meta name="title" content="SKReputation" />
+        <meta name="description" content="Difendi la tua reputazione. Servizio di rimozione articoli online, video, immagini, recensioni, informazioni personali, cancellazione link." />
         <link rel="shortcut icon" href="./assets/img/favicon.ico" />
         <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
@@ -69,7 +70,7 @@ export default function Home() {
                 icon: 'fa-retweet',
                 title: 'Eliminazione materiali dannosi',
                 description:
-                  'Puoi richiedere il nostro servizio innovativo di rimozione dei contenuti negativi per ottenere la cancellazione di foto, video, siti web, blog, articoli di giornale, di informazioni personali, di account digitali come i social network attraverso il diritto all’oblio ed altre tecniche avanzate di digital marketing',
+                  'Puoi richiedere il nostro servizio innovativo di rimozione dei contenuti negativi per ottenere la cancellazione di foto, video, siti web, blog, articoli di giornale, di informazioni personali, di account digitali come i social network.',
               },
               {
                 tailwindColorClasses: 'from-emerald-400 to-emerald-600 bg-emerald-400',
@@ -87,12 +88,12 @@ export default function Home() {
             descFooter="Consulenza e Formazione continua"
             imageCard="https://www.eskimoz.fr/wp-content/uploads/2022/03/e-reputation_1-3-1024x599.jpg"
             cardTitle="Una delle poche realtà in Italia"
-            cardDesc="I clienti che si rivolgono a SKReputations, possono contare sul valore aggiunto di essere seguiti dalla figura dell’E-Reputation Manager, ovvero il manager della reputazione online dei clienti.Questa figura professionale è specializzata nella costruzione dell’identità digitale e nella cura, difesa della reputazione e presenza digitale di persone ed aziende."
+            cardDesc="I clienti che si rivolgono a SKReputation, possono contare sul valore aggiunto di essere seguiti dalla figura dell’E-Reputation Manager, ovvero il manager della reputazione online dei clienti.Questa figura professionale è specializzata nella costruzione dell’identità digitale e nella cura, difesa della reputazione e presenza digitale di persone ed aziende."
           />
           <DescriptionCard
             descTitle="Quando è possibile cancellare un contenuto dal web?"
             desc1="Quando vi è un’esigenza di cancellare dal web articoli relativi a fatti passati che non rappresentano più l’identità e la realtà attuale e che provocano danni gravi e perpetui alla reputazione. "
-            desc2="Alla serenità della persona vittima di un’esposizione forzata di eventi che non hanno più pertinenza e che possono essere dimenticati grazie alla normativa Italiana ed Europea del diritto all’oblio."
+            desc2="Alla serenità della persona vittima di un’esposizione forzata di eventi che non hanno più pertinenza."
             descFooter="Richiedi ora una rimozione di link e salva la tua immagine"
             imageCard="https://ambrosioecommodo.it/ac/wp-content/uploads/2021/10/diritto-oblio-1-1024x545.png"
             cardTitle="Quali contenuti puoi rimuovere dal web?"
@@ -114,10 +115,6 @@ export default function Home() {
                       <p className="mt-2 mb-4 text-xl leading-relaxed text-white opacity-75">
                         Secondo le fonti ufficiali di Google, i richiedenti alla rimozione di contenuti negativi dai motori di ricerca dal 2014 al
                         2019 sono circa 70.000. I contenuti soggetti a rimozione sono 300.000 ed il ritmo di richieste aumenta del 60% ogni 12 mesi.
-                      </p>
-                      <p className="mt-2 mb-4 text-xl leading-relaxed text-white opacity-75">
-                        Il dato più interessante però, è che il 36% dei contenuti e richiedenti sono stati registrati dal 2018 con l’entrata in vigore
-                        del GDPR che rafforza il diritto all’oblio, ovvero il diritto ad essere dimenticati dal web.
                       </p>
                     </div>
                   </div>
@@ -147,7 +144,7 @@ export default function Home() {
             descFooter="Richiedi ora una rimozione di foto e video"
             imageCard="https://www.ogmag.net/wp-content/uploads/2019/02/1.jpg"
             cardTitle="Una nostra storia"
-            cardDesc="Per esempio è capitato di poter aiutare ragazze che in passato hanno partecipato a concorsi di bellezza oppure sui social hanno pubblicato foto o video che sono state ripresi da altri soggetti, anche da YouTube, e poi si sono sposati ed i mariti gelosi volevano che la ragazza in questione cancellasse tutte le sue immagini e suoi video passati.  "
+            cardDesc="Per esempio capita di poter aiutare ragazze che in passato hanno partecipato a concorsi di bellezza che sono state ripresi da altri soggetti ma il materiale postato da questi era inappropriato e dannoso per l'immagine che esse volevano dare. I contenuti possono comparire anche su youtube.  "
           />
           <DescriptionCard
             descTitle="Le banche controllano la reputazione online degli imprenditori e politici prima di concedere un fido?"

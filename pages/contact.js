@@ -12,7 +12,8 @@ export default function Contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>SKreputation</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Notus Design System PRO by Creative Tim | Premium UI Kit and Admin for Tailwind CSS" />
+        <meta name="title" content="SKReputation Contact" />
+        <meta name="description" content="Difendi la tua reputazione. Servizio di rimozione articoli online, video, immagini, recensioni, informazioni personali, cancellazione link." />
         <link rel="shortcut icon" href="./assets/img/favicon.ico" />
         <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />

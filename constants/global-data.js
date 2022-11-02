@@ -60,7 +60,7 @@ export const COLUMNS_CONSULANCE = [
     icon: 'fas fa-user-shield',
     title: "UN PIANO D'AZIONE PER LA DIFESA REPUTAZIONALE",
     description:
-      "I nostri analisti ed i nostri specialisti del diritto all'oblio produrranno un piano con le varie strategie da poter implementare per ciascun contenuto da rimuovere e le possibilità di riuscita.",
+      "I nostri analisti ed i nostri specialisti produrranno un piano con le varie strategie da poter implementare per ciascun contenuto da rimuovere e le possibilità di riuscita.",
   },
   {
     icon: 'fas fa-money-check',
