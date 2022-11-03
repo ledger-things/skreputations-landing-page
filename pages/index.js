@@ -17,7 +17,10 @@ export default function Home() {
         <title>SKreputation</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="title" content="SKReputation" />
-        <meta name="description" content="Difendi la tua reputazione. Servizio di rimozione articoli online, video, immagini, recensioni, informazioni personali, cancellazione link." />
+        <meta
+          name="description"
+          content="Difendi la tua reputazione. Servizio di rimozione articoli online, video, immagini, recensioni, informazioni personali, cancellazione link."
+        />
         <link rel="shortcut icon" href="./assets/img/favicon.ico" />
         <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
@@ -60,23 +63,25 @@ export default function Home() {
             description="Se sei atterrato su questa pagina, molto probabilmente stai subendo qualche situazione spiacevole per colpa di contenuti presenti online e per questo motivo di seguito troverai informazioni utili al tuo bisogno specifico ma per qualsiasi informazione puoi raggiungermi anche per telefono."
             cards={[
               {
-                tailwindColorClasses: 'from-orange-400 to-orange-600 bg-orange-400',
-                icon: 'fa-award',
-                title: 'Cancellazione Rapida',
-                description: 'Puoi ottienere la cancellazione dei contenuti web che danneggiano la tua reputazione, immagine ed il prestigio online.',
-              },
-              {
                 tailwindColorClasses: 'from-lightBlue-400 to-lightBlue-600 bg-lightBlue-400',
                 icon: 'fa-retweet',
-                title: 'Eliminazione materiali dannosi',
+                title: 'Monitoraggio online',
+                description:
+                  'Individuiamo qualsiasi menzione online sul tuo conto o su quello della tua azienda, intervenendo in maniera tempestiva in caso di contenuti negativi',
+              },
+              {
+                tailwindColorClasses: 'from-orange-400 to-orange-600 bg-orange-400',
+                icon: 'fa-award',
+                title: 'Cancellazione Rapida di materiali dannosi',
                 description:
                   'Puoi richiedere il nostro servizio innovativo di rimozione dei contenuti negativi per ottenere la cancellazione di foto, video, siti web, blog, articoli di giornale, di informazioni personali, di account digitali come i social network.',
               },
               {
                 tailwindColorClasses: 'from-emerald-400 to-emerald-600 bg-emerald-400',
                 icon: 'fa-fingerprint',
-                title: 'Guidato passo passo',
-                description: 'Verrai seguito dal nostro team di specialisti al fine di ottenere il risultato desiderato',
+                title: "Miglioriamo l'identità digitale",
+                description:
+                  'Creiamo un’identità digitale nuova e positiva che valorizza la tua reputazione o quella della tua azienda, contrastando le eventuali notizie negative.',
               },
             ]}
           />
@@ -97,7 +102,7 @@ export default function Home() {
             descFooter="Richiedi ora una rimozione di link e salva la tua immagine"
             imageCard="https://ambrosioecommodo.it/ac/wp-content/uploads/2021/10/diritto-oblio-1-1024x545.png"
             cardTitle="Quali contenuti puoi rimuovere dal web?"
-            cardDesc="puoi richiedere la rimozione di articoli di giornale, news, articoli blog,
+            cardDesc="Puoi richiedere la rimozione di articoli di giornale, news, articoli blog,
             puoi richiedere di anonimizzare o cancellare i tuoi dati personali come nome e cognome.
             Puoi richiedere la cancellazione di foto e video che non hanno il consenso al pubblico utilizzo."
             reverse
@@ -110,11 +115,12 @@ export default function Home() {
                 <div className="container mx-auto px-4">
                   <div className="mb-12 flex flex-wrap -mx-4 justify-center">
                     <div className="px-4 relative w-full lg:w-8/12 text-center">
-                      <h6 className="mb-2 font-bold uppercase text-blueGray-200">Trend sulla rimozione</h6>
-                      <h3 className="text-3xl font-bold mt-3 mb-1 text-white">Contenuti dal web 2014-19</h3>
+                      <h6 className="mb-2 font-bold uppercase text-blueGray-200">Rimozione recensioni</h6>
+                      <h3 className="text-3xl font-bold mt-3 mb-1 text-white">Hai ricevuto recensioni ingiuste sul tuo prodotto o servizio?</h3>
                       <p className="mt-2 mb-4 text-xl leading-relaxed text-white opacity-75">
-                        Secondo le fonti ufficiali di Google, i richiedenti alla rimozione di contenuti negativi dai motori di ricerca dal 2014 al
-                        2019 sono circa 70.000. I contenuti soggetti a rimozione sono 300.000 ed il ritmo di richieste aumenta del 60% ogni 12 mesi.
+                        Noi di SKReputation monitoriamo, analizziamo e rimuoviamo tutte le fake review che danneggiano la tua immagine. Il nostro
+                        servizio nasce per dare supporto ad aziende o persone che salvaguardano la propria reputazione da una review diffamatorie. Il
+                        servizio è rivolto sia alla piccola attività e grandi imprese.
                       </p>
                     </div>
                   </div>
@@ -137,6 +143,22 @@ export default function Home() {
             </section>
           </div>
 
+          <DescriptionCard
+            descTitle={
+              <span>
+                Sei una piccola attività? <br /> Hai un e-commerce?
+              </span>
+            }
+            desc1="Sei stato preso di mira da false recensioni che danneggiano la tua immagine e il tuo business?! "
+            desc2="Noi di SKReputation abbiamo tutti gli strumenti per aiutarti nel salvaguardare la tua azienda, il tuo nome e il tuo business."
+            descFooter="Richiedi una consulenza gratuita, i nostri tecnici saranno a tua disposizione ed analizzeranno il tuo caso."
+            imageCard="https://www.bbs.unibo.it/wp-content/uploads/2020/02/1440x580_uomoscala1-e1540819208212.jpg"
+            cardTitle="Storia di un nostro cliente"
+            cardDesc="Un giovane imprenditore decide di voler aprire un proprio e-commerce per la vendita dei suoi prodotti. Dopo tanto lavoro, riesce nella sua impresa, sviluppa il suo shop online e finalmente ha la possibilità di espandere il suo mercato.
+           Bersagliato da false recensioni che danneggiano la sua reputazione, noi di SKReputation lo aiutiamo a riottenere la sua immagine e reputazione monitorando, individuando ed eliminando le false recensioni.
+            Adesso il giovane imprenditore lavora e migliora la sua attività con tranquillità e concentradosi sui suoi obbiettivi senza dover pensare alle recensioni diffamatorie."
+            reverse
+          />
           <DescriptionCard
             descTitle="E' possibile richiedere la cancellazione di foto e video?"
             desc1="Puoi richiedere la rimozione delle immagini ed i video che ti ritraggono.  "
